@@ -1,0 +1,518 @@
+:root {
+    --primary-color: #e82574;
+    --primary-color-dark: #bc1c5c;
+    --text-dark: #0c0a09;
+    --text-light: #78716c;
+    --white: #ffffff;
+}
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid black; */
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    
+}
+
+header .navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    padding:16px 100px;
+    transition: all 0.6s;
+
+}
+
+header nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav ul{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+}
+
+header nav ul a{
+    position: relative;
+    color: var(--white);
+    transition: 0.6s;
+}
+
+header nav ul a:hover{
+    color: #C9C9CA;
+}
+
+.button{
+    background-color: white;
+    padding: .7rem 1.5rem;
+    border-radius: 5rem;
+    border: 2px solid white;
+    color: #18293D;
+    font-weight: 600;
+}
+
+.button:hover{
+    transform: translateY(-3px);
+}
+
+header .navbar .icon{
+    display: none;
+
+}
+
+header .navbar .icon>div {
+    background-color: black;
+    padding: 2px 10px;
+    margin: 3px;
+
+}
+.color{
+    background-color: white;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);
+    transition: all .3s ease-in-out ;
+
+}
+.link{
+    font-weight: 600;
+    color:#233159;
+    transition: all .3s ease-in-out ;
+}
+.button-scroll{
+    background-color: #707FD0;
+    color: var(--white);
+    transition: all .3s ease-in-out ;
+}
+
+/* *************************************END HEADER*************************************** */
+/* *************************************START MAIN*************************************** */
+.section1 {
+    background-image: url(../images/hero-bg.jpg);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    /* gap: 2px; */
+}
+
+.section1 .left h1{
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 3rem;
+}
+
+.section1 .left p{
+    color: var(--white);
+    font-size: 17px;
+    line-height: 1.5rem;
+    margin: 2rem 0 3rem 0;
+
+}
+
+.section1 .left a:last-child{
+    background-color: transparent;
+    color: white;
+    margin-left: 5px;
+}
+
+.section1 .left a:hover:last-child{
+    background-color: var(--white);
+    color: #18293D;
+}
+
+.section1 .right img{
+    position: relative;
+    /* left: 11rem; */
+    width: 30vw;
+    /* height: 500px; */
+    border-radius: 5px;
+    background-size: cover;
+    float: right;
+    
+
+
+}
+
+.section1 .right{
+    margin-top: 2rem;
+}
+/* *************************************END MAIN*************************************** */
+/* *************************************START WHAT WE DO*************************************** */
+.whatwedo{
+    margin: 5rem 100px;
+}
+
+.whatwedo .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.whatwedo .title h5{
+    color: #707FD0;
+}
+
+.whatwedo .title h1{
+    color: #303F51;
+    margin: 1rem 0;
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.whatwedo .content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatwedo .content>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+    gap: 1rem;
+    box-shadow: 0 0 5px rgb(210, 203, 203);
+    border-radius: 5px;
+}
+
+.whatwedo .content>div>i{
+    color: white;
+    padding: 1rem;
+    background-color: #707FD0;
+    border-radius: 50%;
+}
+
+.whatwedo .content>div h3{
+    color: #233159;
+}
+
+.whatwedo .content>div p{
+    margin: 0 2rem;
+    text-align: center;
+    color: #5E6A82;
+}
+
+.whatwedo .content>div small{
+    color: #707FD0;
+    font-weight: 700;
+
+}
+/* *************************************END WHAT WE DO*************************************** */
+/* *************************************START WHY CHOOSE US*************************************** */
+.whochooseus{
+    margin: 5rem 100px;
+    display: grid;
+    grid-template-columns: 57.5% 40%;
+    align-items: center;
+    gap: 2rem;
+}
+
+.whochooseus .left img{
+    width: 48.5vw;
+    background-size: cover;
+}
+
+.whochooseus .right h5{
+    color: #707FD0;
+    margin-top: 1rem;
+}
+
+.whochooseus .right h1{
+    color: #303F51;
+    margin-top: 2rem;
+    font-size: 2.2rem;
+}
+
+.whochooseus .right .one{
+    color: #707FD0;
+}
+
+.whochooseus .right h6{
+    color: #303F51;
+    font-size: 1rem;
+    margin: 2rem 0;
+
+}
+
+.whochooseus .right i{
+    color: #707FD0;
+    font-size: .8rem;
+    margin-right: 5px;
+}
+
+.whochooseus .right p{
+    color: #78716c;
+    margin: 0 0 0 1.4rem;
+    font-size: 1.1rem;
+    
+}
+
+/* *************************************END WHY CHOOSE US*************************************** */
+/* *************************************START OUR SOLUTIONS*************************************** */
+.oursolution{
+    margin: 0 100px;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 40% 57.5%;
+    align-items: center;
+    gap: 2rem;
+}
+
+.oursolution .left h5{
+    color: #707FD0;
+}
+
+.oursolution .left h1{
+    color: #303F51;
+    margin-top: 2rem;
+    font-size: 2.3rem;
+}
+
+.oursolution .left > p{
+    color: #78716c;
+    margin: 2rem 0;
+    font-size: 1.1rem;  
+}
+
+.oursolution .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+.oursolution .content>div{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.oursolution .content>div p{
+    color: #78716c;
+    line-height: 1.4rem;
+}
+
+.oursolution .content>div i{
+    color: #656F81;
+    padding: 5px;
+    background-color: #DCDFEC;
+    border-radius: 50%;
+}
+
+.oursolution .right img{
+    width: 48.5vw;
+    background-size: cover;
+}
+
+/* *************************************END OUR SOLUTIONS*************************************** */
+/* *************************************START BLEUE******************************************** */
+.bleue{
+    position: relative;
+    margin: 0 200px;
+    top: 5rem;
+    background-image: url(../images/stats-bg.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    border-radius: 5px;
+}
+
+.bleue>div h1{
+margin-bottom: 1rem;
+font-size: 3rem;
+}
+
+.bleue>div small{
+    font-size: 1rem;
+}
+/* *************************************END BLEUE********************************************* */
+/* *************************************START CASE STUDIES*************************************** */
+.casestudies{
+    padding: 12rem 0 7rem 0;
+    background-color: #F5F7F9;
+}
+
+.casestudies .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2rem; */
+}
+
+.casestudies .title h5{
+    color: #707FD0;
+}
+
+.casestudies .title h1{
+    margin: 2rem 0;
+    color: #303F51;
+    font-size: 2.2rem;
+    width: 50%;
+    text-align: center;
+}
+
+.casestudies .content{
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.casestudies .content>div{
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.casestudies .content img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.casestudies .content .one{
+    margin: 2rem;
+}
+
+.casestudies .content .one h3{
+    color: #303F51;
+}
+
+.casestudies .content .one p{
+    margin: 1.5rem 0;
+    color: #78716c;
+}
+
+.casestudies .content .one small{
+    color: #A9B3BE;
+    margin-right: 1.2rem;
+}
+/* *************************************END CASE STUDIES*************************************** */
+/* *************************************START FOOTER*************************************** */
+footer{
+    background-color: #303F51;
+    color: white;
+}
+
+footer section{
+
+    margin: 0 100px;
+    padding: 4rem 0;
+}
+
+footer .first{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+    align-items: center;
+}
+
+footer .first h1{
+    width: 50%;
+    font-size: 2.3rem;
+}
+
+footer .first .button{
+    background-color: #707FD0;
+    border: 2px solid #707FD0;
+    color: white;
+    font-weight: 600;
+}
+
+footer .second{
+    margin: 2rem 1rem 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer .second img, h3{
+    margin: 1rem 0 1.5rem 0;
+}
+
+footer .second ul{
+    list-style-type: none;
+    color: #C9C9CA;
+}
+
+footer .second ul li{
+    margin: 5px 0;
+}
+
+footer .second .last{
+    margin-top: 1.5rem;
+}
+
+footer .second .last a{
+    color: white;
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+footer .second form{
+    margin-top: 1.7rem;
+}
+
+footer .second form input{
+    padding: .7rem;
+    width: 73%;
+    background-color: #364456;
+    cursor: pointer;
+    outline: none;
+    color: var(--white);
+}
+
+footer .second form input::placeholder{
+    padding-left: 3px;
+    color: #C6C7C6;
+}
+
+footer .second form a{
+    position: relative;
+    color: white;
+    background-color: #707FD0;
+    padding: .6rem 1.5rem .8rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: -6px;
+    
+}
+
+footer hr{
+    border: 1px solid #465569;
+}
+
+/* *************************************END FOOTER*************************************** */
